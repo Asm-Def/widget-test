@@ -6,9 +6,9 @@ include pyproject.toml
 include pytest.ini
 include .coverage.rc
 
-include tsconfig.json
-include package.json
-include webpack.config.js
+include widget/tsconfig.json
+include widget/package.json
+include widget/webpack.config.js
 include widget_test/labextension/*.tgz
 
 # Documentation
@@ -27,11 +27,11 @@ prune tests/build
 
 # Javascript files
 graft widget_test/nbextension
-graft src
-graft css
+graft widget/src
+graft widget/css
 prune **/node_modules
-prune coverage
-prune lib
+prune widget/coverage
+prune widget/lib
 
 # Patterns to exclude from any directory
 global-exclude *~

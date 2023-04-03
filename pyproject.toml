@@ -91,7 +91,7 @@ dependencies = [
 ]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
-path = "."
+path = "./widget"
 build_cmd = "build:prod"
 
 [tool.tbump]
